@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar Grupo Etario</title>
+</head>
+<body>
+    <h1>Determinar Grupo Etario</h1>
+    
+    <form method="post">
+        <label for="edad">Ingresa tu edad:</label>
+        <input type="text" name="edad" required>
+        <input type="submit" value="Determinar">
+    </form>
+
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% endif %}
+</body>
+</html>

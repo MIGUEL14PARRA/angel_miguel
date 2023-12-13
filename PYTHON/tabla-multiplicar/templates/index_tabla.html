@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar</title>
+</head>
+<body>
+    <h1>Tabla de Multiplicar</h1>
+    
+    <form method="post">
+        <label for="numero">Ingresa un número:</label>
+        <input type="text" name="numero" required>
+        <input type="submit" value="Generar Tabla">
+    </form>
+
+    {% if resultados %}
+        <h2>Tabla de Multiplicar:</h2>
+        <ul>
+            {% for resultado in resultados %}
+                <li>{{ resultado }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

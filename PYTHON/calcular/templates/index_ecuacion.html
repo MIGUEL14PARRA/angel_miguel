@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ecuación</title>
+</head>
+<body>
+    <h1>Calculadora de Ecuación</h1>
+    
+    <form method="post">
+        <label for="x">Ingresa el valor de X:</label>
+        <input type="text" name="x" required>
+        <label for="z">Ingresa el valor de Z:</label>
+        <input type="text" name="z" required>
+        <input type="submit" value="Calcular">
+    </form>
+
+    {% if resultado is not none %}
+        <p>El resultado de la ecuación es: {{ resultado }}</p>
+    {% endif %}
+</body>
+</html>
